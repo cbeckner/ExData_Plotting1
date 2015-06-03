@@ -5,7 +5,7 @@ plot4 <- function(persist = FALSE) {
     if(!exists("powerData")) powerData <- loadPowerData();
 
     #plot the results
-    if(persist) png("plot4.png",width = 480, height = 480)
+    if(persist) png("plot4.png",width = 480, height = 480, bg="transparent")
     #set the grid
     par(mfrow=c(2,2))
     plot2()
