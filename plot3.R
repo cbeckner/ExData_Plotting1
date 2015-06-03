@@ -4,7 +4,7 @@ plot3 <- function(persist = FALSE) {
     if(!exists("powerData")) powerData <- loadPowerData();
 
     #plot the results
-    if(persist) png("plot3.png",width = 504, height = 504)
+    if(persist) png("plot3.png",width = 480, height = 480)
     plot(powerData$DateTime,powerData$Sub_metering_1,type="l",xlab="",ylab="Energy sub metering")
     lines(powerData$DateTime,powerData$Sub_metering_2,col="red")
     lines(powerData$DateTime,powerData$Sub_metering_3,col="blue")
